@@ -1,0 +1,24 @@
+:root {
+    --black: #000; /* login_text */
+    --white: #FFFFFF; /* text_selected */
+    --red: #FF001F; /* wrong */
+    --blue_1: #091931; /* selected */
+    --blue_2: #2A3647; /* background */
+    --blue_3: #405269; /* hovered */
+    --blue_4: #29ABE2; /* extra_links_hovered */
+    --blue_5: #42526E;
+    --blue_6: #0038FF;
+    --blue_7: #4589FF;
+    --turquoise_1: #1FD7C1;
+    --grey_1: #A8A8A8; /* extra_links */
+    --grey_2: #D1D1D1; /* form_border */
+    --grey_3: #CDCDCD; /* text */
+    --grey_4: #E7E7E7;
+    --grey_5: #F4F4F4;
+    --lime_1: #7AE229;
+    --orange_1: #FF3D00;
+    --button_shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); /* button_shadow   !do not use! */
+    --fontsize: 16px; /* fontsize  !do not use! */
+    --fontsize_big: 61px; /* fontsize_big  !do not use */
+    --font-family: 'Inter', sans-serif; /* font-family */
+}

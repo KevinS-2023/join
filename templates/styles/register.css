@@ -1,0 +1,239 @@
+.registrationframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+.registrationcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 48px 88px;
+    max-width: 498px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    border-radius: 90px;
+}
+
+.arrow:hover {
+    background-color: #EEEEEE;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headertext {
+    margin: 0 0 15.5px 0!important;
+}
+
+.resistrationform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.inputcontainer {
+    position: relative;
+}
+
+.resgistrationinput {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    outline: none;
+    width: 380px;
+    height: 22px;
+    padding: 12px 21px;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    border: 1px solid var(--grey_2);
+    background: white;
+}
+
+.checkcontainer_registration {
+    display: inline-flex;
+    margin-top: 14px;
+    gap: 8px;
+}
+
+#acceptpp:checked+.customcheckbox_regestration {
+    background-image: url(../../assets/checkbox_checked.svg);
+}
+
+.acceptpp {
+    display: inline-flex;
+    color: var(--grey_1);
+    gap: 8px;
+    align-items: end;
+    margin-bottom: 1px;
+    font-family: var(--font-family) !important;
+}
+
+.acceptpp a {
+    text-decoration: none;
+    color: var(--blue_4);
+    white-space: nowrap;
+}
+
+.acceptpp a:hover {
+    text-decoration: underline;
+}
+
+.formbutton_regestration {
+    border: none;
+    width: 126px;
+    height: 55px;
+    border-radius: 8px;
+    margin-top: 8px;
+    color: var(--white);
+    background-color: var(--blue_2);
+}
+
+.submitbutton:hover {
+    background-color: var(--blue_4);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.customcheckbox_regestration {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+    background-image: url(../../assets/checkbox_unchecked.svg);
+}
+
+.popupregister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-style: normal;
+    height: 74px;
+    width: 262px;
+    padding: 0px 25px;
+    top: 0;
+    right: -500px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--white);
+    background-color: var(--blue_2);
+    animation: popup 5s;
+    animation-delay: 3s;
+}
+
+.popupregister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-style: normal;
+    height: 74px;
+    width: 262px;
+    padding: 0px 25px;
+    top: 0;
+    right: -350px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--white);
+    background-color: var(--blue_2);
+    animation: popup 4s;
+    animation-iteration-count: infinite;
+}
+
+.animation_play {
+    animation-play-state: running !important;
+}
+
+.animation_stop {
+    animation-play-state: paused !important;
+}
+
+.wronginput {
+    border-color: var(--red) !important;
+}
+
+.withinput {
+    border-color: var(--blue_4); 
+}
+
+@media (max-width: 910px) {
+    
+    .registrationcontainer {
+        padding: 32px 16px;
+    }
+    .headertext {
+        margin: 0;
+    }
+    .arrow {
+        top: 40px;
+        left: 40px;
+    }
+    .resgistrationinput {
+        width: 322px;
+        height: 24px;
+    }
+    .formbutton_regestration {
+        width: 180px;
+    }
+    .checkcontainer_registration {
+        margin-top: 32px;
+    }
+    .formbutton_regestration {
+        height: 51px;
+    }
+}
+
+@media (max-width: 400px) {
+    .arrow {
+        left: 25px;
+    }
+    .headertext {
+        width: auto;
+    }
+    .resgistrationinput {
+        width: 256px;
+    }
+
+    .logo-big-container {
+        width: 332px !important;
+        align-self: center;
+    }
+}
+
+@keyframes popup {
+    0% {
+        right: -500px;
+    }
+    40%, 60% {
+        right: 0;
+    }
+    75%, 100% {
+        right: -500px;
+    }
+}

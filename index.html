@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./colors/colors.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./templates/styles/register.css">
+    <link rel="shortcut icon" href="./joinlogo/logo_dark.svg" type="image/x-icon">
+    <title>Join</title>
+</head>
+
+<body>
+
+    <div class="maincontainer">
+
+        <div class="logo-big animateLogo"></div>
+
+        <div class="logo-big-container">
+            <div class="logo-small animateLogo-small"></div>
+        </div>
+
+        <div class="logincontainer">
+
+            <div class="login">
+
+                <h1 class="headtext">
+                    Log in
+                </h1>
+
+                <img src="./assets/underline.svg" alt="" class="underline">
+
+                <form class="login_form" id="login_form" method="POST">
+
+                    <div class="inputcontainer">
+                        <input type="email" class="form_input" id="getemail" placeholder="Email" name="email" required>
+                        <img src="./assets/mail.svg" alt="" class="inputlogo">
+                    </div>
+
+                    <div class="inputcontainer">
+                        <input type="password" class="form_input form_inputpassword" id="getpassword" placeholder="Passwort" required>
+                        <img src="./assets/lock.svg" alt="" class="inputlogo inputlogologin">
+                        <p class="wrongpassword d-none">Wrong password Ups! Try again.</p>
+                    </div>
+
+                </form>
+
+                <div class="checkcontainer">
+                    <div class="customcheckboxcontainer">
+                        <input type="checkbox" name="" class="d-none" id="rememberme">
+                        <label class="customcheckbox" for="rememberme"></label>
+                        <p>Remember me</p>
+                    </div>
+                </div>
+
+                <div class="buttoncontainer">
+
+                    <button class="formbutton loginbtn" type="submit" form="login_form">
+                        Log in
+                    </button>
+
+                    <button class="formbutton guestbtn">
+                        Guest Log in
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="signupcontainer">
+
+            <p>Not a Join user?</p>
+
+            <button class="formbutton signupbtn">Sign up</button>
+
+        </div>
+
+        <div class="extra">
+            <a href="./privacypolicyframe/index.html" target="_blank">Privacy Policy</a>
+            <a href="./legalnoticeframe/index.html" target="_blank">Legal notice</a>
+        </div>
+
+        <div class="registrationframe d-none">
+
+            <div class="registrationcontainer">
+    
+                <img src="./assets/arrow_backwards.svg" alt="" class="arrow">
+    
+                <div class="header">
+    
+                    <h1 class="headtext headertext">Sign up</h1>
+    
+                    <img src="./assets/underline.svg" alt="" class="underline">
+    
+                </div>
+    
+                <form action="" class="resistrationform">
+    
+                    <div class="inputcontainer">
+                        <input type="text" name="" placeholder="Name" class="resgistrationinput registrationname" required>
+                        <img src="./assets/userlogo.svg" alt="" class="inputlogo">
+                    </div>
+    
+                    <div class="inputcontainer">
+                        <input type="email" name="" placeholder="Email" class="resgistrationinput registrationemail" required>
+                        <img src="./assets/mail.svg" alt="" class="inputlogo">
+                    </div>
+    
+                    <div class="inputcontainer">
+                        <input type="password" name="" placeholder="Password" class="resgistrationinput passwordinput" required>
+                        <img src="./assets/lock.svg" alt="" class="inputlogo passwordlogo">
+                    </div>
+    
+                    <div class="inputcontainer">
+                        <input type="password" name="" placeholder="Confirm Password" class="resgistrationinput passwordinputref"required>
+                        <img src="./assets/lock.svg" alt="" class="inputlogo passwordlogoref">
+                        <p class="wrongpassword wrongpasswordregister d-none">Ups! your password don’t match</p>
+                    </div>
+    
+                    <div class="checkcontainer_registration">
+                        <input type="checkbox" class="d-none" name="" id="acceptpp" required>
+                        <label for="acceptpp" class="customcheckbox_regestration">
+                        </label>
+                        <div class="acceptpp">
+                            I accept the <a href="./legalnoticeframe/index.html">Privacy Policy</a>
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="formbutton formbutton_regestration" disabled>Sign up</button>
+    
+                </form>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+
+    <div class="popupregister animation_stop">You Signed Up successfully</div>
+
+    <div class="animationscreen"></div>
+
+    <script type="module" src="./scripts/login.js"></script>
+    <script type="module" src="./scripts/registration.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

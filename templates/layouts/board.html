@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../colors/colors.css">
+    <link rel="stylesheet" href="../../colors/backgroundcolors.css">
+    <link rel="stylesheet" href="../../templates/styles/board.css">
+</head>
+
+<body>
+    <div class="boardcontainer">
+
+        <div class="header">
+            <div class="headtextcontainer">
+                <h1>Board</h1>
+                <button class="mobileaddbtn"></button>
+            </div>
+
+            <div class="headerinteract">
+
+                <div class="inputcontainer">
+                    <input type="text" placeholder="Find Task" class="searchtaskinput">
+                    <img src="../../assets/smallpartingline.svg" alt="">
+                    <button class="searchbtn"></button>
+                </div>
+
+                <button class="addtaskbtn">
+                    Add task
+                    <img src="../../assets/plus_white.svg" alt="">
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="boardtasks">
+
+            <div class="taskcol">
+                <div class="taskhead">
+                    To do
+                    <div class="addToDo"></div>
+                </div>
+                <div class="tasksshowof taskstodo">
+                </div>
+            </div>
+
+            <div class="taskcol">
+                <div class="taskhead">
+                    In progress
+                    <div class="addInProgress"></div>
+                </div>
+                <div class="tasksshowof tasksinprogress">
+                </div>
+            </div>
+
+            <div class="taskcol">
+                <div class="taskhead">
+                    Await feedback
+                    <div class="addAwaitFeedback"></div>
+                </div>
+                <div class="tasksshowof tasksawaitfeedback">
+                </div>
+            </div>
+
+            <div class="taskcol">
+                <div class="taskhead">
+                    Done
+                </div>
+                <div class="tasksshowof tasksdone">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Fullsize Task Card -->
+
+        <section class="fullsizeTask">
+            <!-- header -->
+            <section class="fullSizeTaskHeader">
+                <div class="fullSizeTaskCategorie categorie flexCC">categorie</div>
+                <img src="../../assets/close.svg" alt="close" class="closeFullSizeTask">
+            </section>
+            <!-- titel & description -->
+            <strong class="fullSizeTitel fontHeavy">title</strong>
+            <span class="fontStandard fullSizeDescription">description</span>
+            <!-- date -->
+            <section class="fullSizeStandardBox flexNC">
+                <p class="fontColorBlue fontStandard">Due date:</p>
+                <p class="fontStandard fullSizeDate">10/05/2023</p>
+            </section>
+            <!-- priority -->
+            <section class="fullSizeStandardBox flexNC">
+                <p>Priority:</p>
+                <div class="fullSizeStandardBox flexNC fullSizePriotity">
+                    <p>Urgent</p>
+                    <img src="../../assets/urgent.svg" alt="">
+                </div>
+            </section>
+            <!-- assigned to -->
+            <section class="fullSizeAssignedTo">
+                <p class="fullSizeStandardBox fontColorBlue fontStandard">Assigned To:</p>
+                <div class="fullSizeAssignedContacts"></div>
+            </section>
+            <!-- subtasks -->
+            <section class="subtaskSection">
+                <p class="fullSizeStandardBox fontColorBlue fontStandard">Subtasks</p>
+                <ul class="fullSizeSubTasksContainer"></ul>
+            </section>
+            <!-- bottom -->
+            <section class="fullSizeButtonContainer">
+                <button class="deleteButton flexCC fullSizeButton">
+                    <div class="deleteIcon"></div>Delete
+                </button>
+                <div class="verticalLineFullSizeButtons"></div>
+                <button class="editButton flexCC fullSizeButton">
+                    <div class="editIcon"></div>Edit
+                </button>
+            </section>
+        </section>
+
+        <!-- ADD / EDIT Task Container -->
+        <iframe class="iframeTaskFormular" src="../layouts/tasks.html" frameborder="0"></iframe>
+
+        <script type="module" src="../scripts/board.js"></script>
+
+</body>
+
+</html>

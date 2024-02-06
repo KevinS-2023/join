@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../colors/backgroundcolors.css">
+    <link rel="stylesheet" href="../../colors/colors.css">
+    <link rel="stylesheet" href="../styles/tasks.css">
+</head>
+
+<body>
+
+    <div class="tasks-frame">
+
+        <div class="task-created">Task created</div>
+
+        <form class="task-container">
+
+            <div class="header-container">
+                <h1 class="header">Add Task</h1>
+                <img src="../../assets/close.svg" alt="close" class="closeImg">
+            </div>
+
+
+            <div class="form-container">
+                <section action="" class="leftform">
+                    <div>
+                        <div class="formtext">Title<div class="star">*</div>
+                        </div>
+                        <input type="text" class="forminput titleinput" placeholder="Enter a title" required>
+                    </div>
+                    <div>
+                        <p class="formtext">Description</p>
+                        <textarea name="" id="" cols="30" rows="10" class="description"
+                            placeholder="Enter a Description"></textarea>
+                    </div>
+                    <div class="undercontainer"> <!-- selectuserscontainer -->
+                        <div class="formtext">Assigned to</div>
+                        <input type="text" class="forminput assignedinput" name="" id=""
+                            placeholder="Select contacts to assign">
+                        <span class="newarrow assignedarrow"></span>
+                        <div style="position: absolute;">
+                            <ul class="selectuserslist d-none"></ul>
+                            <button class="addcontact d-none">Add new contact <img src="../../assets/person_add.svg"
+                                    alt=""></button>
+                            <div class="fillspace d-none"></div>
+                        </div>
+                        <div class="selectedusersshowoff"></div>
+                    </div>
+                </section>
+
+                <img src="../../assets/partingline.svg" alt="" class="partingline">
+
+                <section action="" class="rightform">
+                    <div class="undercontainer">
+                        <div class="formtext">Due date<div class="star">*</div>
+                        </div>
+                        <input type="date" class="forminput dateinput" required>
+                    </div>
+                    <div>
+                        <div class="formtext">Prio<div class="star">*</div>
+                        </div>
+                        <div class="priobuttons">
+                            <button class="priobutton" name="urgentbutton">
+                                Urgent
+                                <img src="../../assets/urgent.svg" alt="" class="buttonimg">
+                            </button>
+                            <button class="priobutton mediumbutton" name="mediumbutton">
+                                Medium
+                                <img src="../../assets/medium.svg" alt="" class="buttonimg">
+                            </button>
+                            <button class="priobutton" name="lowbutton">
+                                Low
+                                <img src="../../assets/low.svg" alt="" class="buttonimg">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="undercontainer undercontainerCategory">
+                        <div class="formtext">Category<div class="star">*</div>
+                        </div>
+                        <input type="text" class="forminput formselect" value="Technical Task" readonly>
+                        <span class="newarrow categoryarrow"></span>
+                        <div class="categorylist d-none">
+                            <p class="category" id="Technical Task">Technical Task</p>
+                            <p class="category" id="User Story">User Story</p>
+                        </div>
+                    </div>
+                    <div class="undercontainer">
+                        <p class="formtext amountofsubtasks">Subtasks</p>
+                        <input type="text" class="forminput inputsubtask" placeholder="Add  new subtask">
+                        <img src="../../assets/plus.svg" alt="" class="subtasksbutton addsubtask">
+                        <div class="subtaksbuttons d-none">
+                            <img src="../../assets/X.svg" alt="" class="subtasksbutton clearsubtask">
+                            <img src="../../assets/smallpartingline.svg" alt="" class="smallpartingline">
+                            <img src="../../assets/okay.svg" alt="" class="subtasksbutton acceptsubtask">
+                        </div>
+                        <ul class="subtasks"></ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="formtext instruction">
+                <div class="star">*</div>This field is required
+            </div>
+
+            <div class="formbuttons">
+                <button class="formbutton clearbutton">Clear<div></div></button>
+                <button class="formbutton createbutton desktopcreatebutton" id="TODO" type="submit">Create Task<div>
+                    </div></button>
+            </div>
+
+            <div class="mobileformbuttons">
+                <div class="formtext mobileinstruction">
+                    <div class="star">*</div>This field is required
+                </div>
+                <button class="formbutton createbutton mobilecreatebutton" id="TODO" type="submit">Create Task</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script type="module" src="../scripts/task.selector.js"></script>
+    <script type="module" src="../scripts/tasks.js"></script>
+    <script type="module" src="../scripts/createcontactlist.js"></script>
+    <script type="module" src="../scripts/createtask.js"></script>
+
+</body>
+
+</html>

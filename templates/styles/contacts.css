@@ -1,0 +1,286 @@
+/* Standard classes ----------------------------------------------------------------------*/
+body {
+    margin: 96px 0px 0px 232px;
+    font-family: var(--font-family);
+    display: flex;
+    width: calc(100% - 232px);
+    height: calc(100vh - 96px);
+    overflow: hidden !important;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 8px;
+}
+
+h3{
+    margin-left: 0%;
+}
+
+h5 {
+    font-size: 24px;
+    margin: 8px;
+}
+
+.displayCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Line Vertical / Line Horizontal ------------------------------------------------------*/
+.lineVertical {
+    width: 3px;
+    height: 59px;
+    background-color: var(--blue_4);
+}
+
+.lineHorizontal {
+    height: 0.2em;
+    width: 32%;
+    background-color: var(--blue_4);
+}
+
+.contactListLineContainer {
+    width: 352px;
+    height: 16px;
+    padding: 8px 0px;
+}
+
+.contactListLine {
+    width: 352px;
+    height: 1px;
+    background-color: var(--grey_2);
+}
+
+/* Contact List --------------------------------------------------------------------------*/
+.contactListContainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    Padding: 32px 24px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* contact list buttons----------------------*/
+.btnAddNewContact {
+    background-color: var(--blue_2);
+    height: 56px;
+    width: 255px;
+    margin: 0em 0em 2em 0em;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    gap: 16px;
+}
+
+.btnAddNewContact img {
+    width: 29.33px;
+    height: 20.91px;
+}
+
+.btnAddNewContact:hover {
+    background-color: var(--blue_4);
+    cursor: pointer;
+}
+
+/* contact list ------------------------------*/
+.contactList {
+    display: inline-flex;
+    padding: 32px 24px 160px 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactListChar {
+    display: flex;
+    padding: 17px 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.contactInitialsContactList {
+    width: 42px;
+    height: 42px;
+    border-radius: 45px;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact {
+    display: flex;
+    width: 352px;
+    padding: 15px 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+    border-radius: 10px;
+}
+
+/* Container for Contact Informations ----------------------------------------------------*/
+.contactDataContainer {
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #F6F7F8;
+}
+
+.contactDataHeadText {
+    display: flex;
+    justify-content: center;
+    height: 73px;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.contactDataHeadText h1{
+    font-size: 56px;
+    margin: 8px;
+}
+
+/* contact informations-----------------------*/
+.contactInformationContainer {
+    height: 80%;
+    width: 100%;
+}
+
+.informationContainer {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    left: 110vw;
+    top: 35vh;
+    transition: 900ms ease-in-out;
+    background-color: #F6F7F8;
+    z-index: 9;
+}
+
+.informationArrowBackContainer {
+    display: none;
+}
+
+.informationInitialsAndName {
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.informationNameAndButtons {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contactInitials {
+    height: 120px;
+    width: 120px;
+    border-radius: 8em;
+    margin: 24px;
+    color: var(--white);
+}
+
+.infoMailAndPhone {
+    margin: 24px;
+}
+
+.infoMailAndPhone a {
+    text-decoration: none;
+}
+
+.contactNameAndMail {
+    width: auto;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contactNameAndMail h3 {
+    margin: 0;
+}
+
+.contact:hover {
+    background-color: var(--grey_2);
+    cursor: pointer;
+}
+
+.selectedContact {
+    background-color: var(--blue_2);
+    color: var(--white);
+}
+
+.selectedContact:hover {
+    background-color: var(--blue_2);
+}
+
+/* Buttons  -------------------------------*/
+.informationButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.informationButtons div {
+    width: auto;
+    height: 24px;
+    gap: 13px;
+}
+
+.informationButtons p {
+    margin: 0;
+}
+
+.infoEditButton:hover {
+    cursor: pointer;
+    color: var(--blue_4);
+}
+
+.infoEditButton:hover #editSvg {
+    fill: #29ABE2;
+}
+
+.infoDeleteButton:hover {
+    color: var(--blue_4);
+    cursor: pointer;
+}
+
+.infoDeleteButton:hover #deleteSvg {
+    fill: #29ABE2;
+}
+
+.buttonInfoContainerMobile {
+    display: none
+}
+
+/* Slide Button (succesfully) -----------------------------------------------------------*/
+.slideButton {
+    position: absolute;
+    bottom: 25vh;
+    left: 110vw;
+    width: 326px;
+    height: 58px;
+    background-color: var(--blue_2);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+#inputPhone{
+    appearance: textfield;
+}
+
+#inputPhone::-webkit-inner-spin-button{
+    appearance: none;
+}

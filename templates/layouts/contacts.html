@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Contacts</title>
+
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <link rel="stylesheet" href="../styles/contactForm.css">
+    <link rel="stylesheet" href="../styles/contactMediaQuery.css">
+    <link rel="stylesheet" href="../../colors/colors.css">
+    <link rel="stylesheet" href="../../colors/backgroundcolors.css">
+</head>
+
+<body>
+
+    <!-- contact list (left side) --------------------------------------------------------------------------->
+    <div class="contactListContainer" id="contactListContainer">
+        <div class="displayCenterCenter">
+
+            <button class="btnAddNewContact" id="btnAddNewContact"><!--onclick="openContactFormAdd()"-->
+                <h3>Add new contact</h3>
+                <img src="../../assets/person_add.svg" alt="add person">
+            </button>
+
+        </div>
+
+        <div class="contactList" id="contactList">
+            <!-- will be filled with the contacts -->
+        </div>
+
+    </div>
+
+    <!-- container for contact informations (right side) --------------------------------------------------->
+    <div class="contactDataContainer displayCenterCenter" id="contactDataContainer">
+        <div class="contactDataHeadText displayCenterCenter" id="contactDataHeadText">
+            <h1>Contacts</h1>
+            <div class="lineVertical"></div>
+            <h5 class="blue">Better with a team</h5>
+        </div>
+        <div class="contactInformationContainer displayCenterCenter" id="contactInformationContainer">
+        </div>
+    </div>
+
+
+    <!-- Contact Formular -->
+    <div class="contactFormContainer displayCenterCenter" id="contactForm">
+
+        <div class="contactForm">
+
+            <!-- Contact Form Close Button -->
+            <div class="closeButtonContainer">
+                <div id="closeButton" class="closeButton"></div>
+                <!-- <img src="../../assets/close.svg" alt="Close" id="closeButton"> -->
+            </div>
+
+            <div class="contactFormContent">
+                <!-- Contact Formular Text and Logo -->
+                <div class="contactFormTextAndLogo">
+                    <img src="../../joinlogo/logo_white.svg" alt="">
+                    <div id="contactFormLeftSideText">
+                        <!-- Left Side Text -->
+                    </div>
+                    <div class="lineHorizontal"></div>
+                </div>
+
+                <!-- Contact Initials Container -->
+                <div class="contactInitials displayCenterCenter" id="contactInitials"></div>
+
+                <!-- Contact Inputt and Buttons Container -->
+                <form action="" class="contactFormInputAndButtons" id="contactFormInputAndButtons">
+
+                    <!-- input name / mail / phone number -->
+                    <div class="inputBox displayCenterCenter">
+                        <input type="text" placeholder="Name" id="inputName" required>
+                        <img src="../../assets/person.svg" alt="">
+                    </div>
+
+                    <div class="inputBox displayCenterCenter">
+                        <input type="email" placeholder="Email" id="inputMail" required>
+                        <img src="../../assets/mail.svg" alt="Email">
+                    </div>
+
+                    <div class="inputBox displayCenterCenter">
+                        <input type="number" placeholder="Phone" id="inputPhone" required>
+                        <img src="../../assets/call.svg" alt="">
+                    </div>
+
+                    <!-- Buttons  -->
+                    <div class="buttonContainer" id="contactFormButtonContainer">
+                        <!-- first Button -->
+                        <button class="contactFormButton contactFormFirstButton" id="contactFormFirstButton"></button>
+                        <!-- Second Button -->
+                        <button type="submit" class="contactFormButton contactFormSecondButton" id="contactFormSecondButton"></button>
+                        <!--onclick="document.getElementById('submit-btn').click()"-->
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Contact Information Container ---------------------------------------------------------------------->
+
+    <div class="informationContainer" id="informationContainer"><!--onclick="closeEditAndDeleteButtons(event)"-->
+        <div class="informationArrowBackContainer"><img src="../../assets/arrow_backwards.svg" alt="back"
+                id="imgArrowBack"></div>
+        <div class="informationInitialsAndName">
+            <div class="contactInitials displayCenterCenter" id="contactInformationInitials"><!-- contact initials-->
+            </div>
+            <div class="informationNameAndButtons">
+                <h1 id="contactInformationName"><!-- Name --></h1>
+                <div class="informationButtons" id="informationButtons">
+                    <div class="infoEditButton displayCenterCenter" id="infoEditButton">
+                        <!-- img svg edit -->
+                    </div>
+                    <div class="infoDeleteButton displayCenterCenter" id="infoDeleteButton">
+                        <!-- img svg delete -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoMailAndPhone" id="infoMailAndPhone">
+
+        </div>
+
+        <div class="buttonInfoContainerMobile" id="buttonInfoContainerMobile">
+            <!--onclick="openEditAndDeleteButtons(event)"-->
+            <img src="../../assets/more_vert.svg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Button Contact succesfull created / contact succesfull deleted ------------------------------------>
+    <div class="slideButton displayCenterCenter" id="slideButton"></div>
+
+    <script type="module" src="../scripts/contactsHelpFunctions.js"></script>
+    <script type="module" src="../scripts/contact.js"></script>
+    <script type="module" src="../scripts/contactGenerate.js"></script>
+    <script type="module" src="../../classes/contacts.class.js"></script>
+    
+
+</body>
+
+</html>

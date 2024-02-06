@@ -1,0 +1,163 @@
+.contactFormContainer {
+    width: calc(100% - 232px);
+    height: calc(100% - 96px);
+    position: absolute;
+    top: 0px;
+    left: 110vw;
+    transition: 600ms ease-in-out;
+    z-index: 10;
+    margin: 96px 0px 0px 232px;
+    overflow-y: scroll;
+}
+
+.contactForm {
+    max-width: 1212px;
+    height: 594px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--blue_2) 30%, var(--white) 20%);
+    border-radius: 2em;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Close Button --------------------------------------------------------------------- */
+.closeButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeButton {
+    padding: 9.25px;
+    border-radius: 16px;
+    width: 13.15px;
+    height: 13.15px;
+    margin: 24px 24px 0px 0px;
+    background-image: url(../../assets/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.closeButton:hover {
+    background-color: var(--grey_2);
+    cursor: pointer;
+}
+
+/* Content Container -------------------------------------------------------------------- */
+.contactFormContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+/* Left Side / Top side ----------------------------------------------------------------- */
+.contactFormTextAndLogo {
+    display: flex;
+    flex-direction: column;
+    width: calc(30% - 66px);
+    color: var(--white);
+    Padding: 66px 0px 66px 48px;
+    border-radius: 2em 0em 0em 2em;
+}
+
+.contactFormTextAndLogo img {
+    width: 54px;
+    height: 66px;
+}
+
+/* Input Elements ------------------------------------------------------------------------ */
+.contactFormInputAndButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.contactFormInputAndButtons input {
+    height: 50px;
+    max-width: 400px;
+    min-width: 250px;
+    border-style: none;
+    border-radius: 1em;
+    outline: none;
+}
+
+.inputBox {
+    border: 2px solid var(--grey_2);
+    border-radius: 1em;
+    padding: 0px 8px 0px 8px;
+}
+
+.inputBox input {
+    width: 100%;
+}
+
+.inputBox:hover {
+    border: 2px solid var(--blue_4);
+}
+
+.inputBox:focus-within {
+    border: 2px solid var(--blue_4);
+}
+
+.inputBox img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Buttons -------------------------------------------------------------------------------- */
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contactFormButton {
+    border-radius: 10px;
+    padding: 16px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.contactFormButton h4 {
+    margin: 0;
+}
+
+.contactFormFirstButton {
+    width: 126px;
+    height: 56px;
+    border: 1px solid var(--blue_2);
+    background-color: var(--white);
+    color: var(--background);
+}
+
+.contactFormFirstButton:hover {
+    border: 1px solid var(--blue_4);
+    color: var(--blue_4);
+    cursor: pointer;
+}
+
+.contactFormFirstButton:hover #cancelSvg {
+    stroke: var(--blue_4);
+}
+
+#cancelSVG{
+    width: 20px;
+}
+
+.contactFormSecondButton {
+    max-width: 214px;
+    height: 56px;
+    border: none;
+    background-color: var(--blue_2);
+    color: var(--white);
+    min-width: 126px;
+}
+
+.contactFormSecondButton:hover {
+    background-color: var(--blue_4);
+    cursor: pointer;
+}
+

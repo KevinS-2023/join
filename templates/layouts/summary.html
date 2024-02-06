@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../colors/colors.css">
+    <link rel="stylesheet" href="../styles/summary.css">
+</head>
+
+<body>
+
+    <div class="summarycontainer">
+
+        <div class="contentcontainer">
+
+            <div class="summaryboard">
+                <div class="header">
+                    <h1>Join 360</h1>
+                    <img src="../../assets/partingline_blue.svg" alt="">
+                    <p>Key Metrics at a Glance</p>
+                </div>
+
+                <div class="tododonecontainer">
+                    <div class="tododone todo" name="task">
+                        <div class="img"></div>
+                        <div class="tododonecount">
+                            <h2 class="todoamount"></h2>
+                            <p>To-do</p>
+                        </div>
+                    </div>
+
+                    <div class="tododone done" name="task">
+                        <div class="img"></div>
+                        <div class="tododonecount">
+                            <h2 class="doneamount"></h2>
+                            <p>Done</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urgentcontainer" name="task">
+                    <div class="urgent">
+                        <div class="urgentimgcontainer">
+                        </div>
+                        <div>
+                            <h2 class="urgentamount"></h2>
+                            <p>Urgent</p>
+                        </div>
+                    </div>
+                    <img src="../../assets/middlepartingline.svg" alt="">
+                    <div class="datecontainer">
+                        <h2 class="date">Month Day, Year</h2>
+                        <p>Upcoming Deadline</p>
+                    </div>
+                </div>
+
+                <div class="taskinboard">
+                    <div name="task">
+                        <h2 class="tasksamount"></h2>
+                        <p>Tasks in <br> Board</p>
+                    </div>
+                    <div name="task">
+                        <h2 class="tasksinprogressamount"></h2>
+                        <p>Tasks In <br> Progress</p>
+                    </div>
+                    <div name="task">
+                        <h2 class="awaitingfeedbackamount"></h2>
+                        <p>Awaiting <br> Feedback</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="namecontainer">
+                <h2 class="greeting"></h2>
+                <h2 class="greetingname"></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="../scripts/summary.js"></script>
+</body>
+
+</html>

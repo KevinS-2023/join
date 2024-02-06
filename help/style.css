@@ -1,0 +1,76 @@
+body {
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+}
+
+.help-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 144px 0 0 232px;
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 61px;
+}
+
+.header .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 0;
+    font-size: 27px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    counter-reset: li;  /* Initialisieren des Zählers */
+    list-style: none;  /* Entfernen der Standard-Nummerierung */
+}
+
+ol li {
+    display: flex;
+    flex-direction: row;
+    counter-increment: li;  /* Erhöhen des Zählers bei jedem li */
+}
+
+ol li div {
+    display: flex;
+    flex-direction: column;
+}
+
+ol li::before {
+    content: counter(li) ".";  /* Anzeigen des Zählerwerts vor dem li */
+    font-size: 30px;  /* Setzen der Schriftgröße */
+    margin-right: 10px;  /* Hinzufügen eines rechten Randes */
+}
+
+@media (max-width: 1250px) {
+    .help-frame {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+}

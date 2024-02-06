@@ -1,0 +1,478 @@
+body {
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+.summarycontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    width: calc(100vw - 232px);
+    margin: 93px 0 0 232px;
+}
+
+.contentcontainer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.summaryboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 625px;
+    margin-bottom: 56px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.header p {
+    margin: 0;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.tododonecontainer {
+    display: flex;
+    flex-direction: row;
+    width: 560px;
+    gap: 32px;
+    margin-bottom: 28px;
+}
+
+.tododone {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 18px;
+    width: 226px;
+    height: 92px;
+    padding: 38px 19px;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.tododone * {
+    pointer-events: none;
+}
+
+.tododone:hover {
+    background-color: var(--blue_2);
+}
+
+.tododone:hover .tododonecount h2,
+.tododone:hover .tododonecount p {
+    color: var(--white);
+}
+
+.todo:hover .img {
+    background-image: url(../../assets/summarytodo_white.svg);
+}
+
+.done:hover .img {
+    background-image: url(../../assets/summarydone_white.svg);
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+}
+
+.todo .img {
+    background-image: url(../../assets/summarytodo.svg);
+}
+
+.done .img {
+    background-image: url(../../assets/summarydone.svg);
+}
+
+.tododonecount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.tododonecount h2 {
+    margin: 0;
+    color: var(--black);
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.tododonecount p {
+    margin: 0;
+    color: var(--blue_2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.urgentcontainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 464px;
+    height: 112px;
+    padding: 28px 48px;
+    gap: 61px;
+    border-radius: 30px;
+    margin-bottom: 28px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.urgentcontainer * {
+    pointer-events: none;
+}
+
+.urgentcontainer:hover {
+    color: var(--white) !important;
+    background-color: var(--blue_2);
+}
+
+.urgentcontainer:hover .urgent div h2,
+.urgentcontainer:hover .date {
+    color: var(--white);
+}
+
+.urgent {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.urgentimgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+    background-image: url(../../assets/urgent_white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 34px 26px;
+    background-color: var(--orange_1);
+}
+
+.urgent div h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.urgent div p {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.datecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.datecontainer h2 {
+    margin: 0;
+    color: var(--blue_2);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.datecontainer p {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.taskinboard {
+    display: flex;
+    flex-direction: row;
+    padding: 1px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    width: 560px;
+}
+
+.taskinboard div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 118px;
+    padding: 25px 0px;
+    gap: 13px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.taskinboard div:hover {
+    background-color: var(--blue_2);
+}
+
+.taskinboard div:hover h2,
+.taskinboard div:hover p {
+    color: var(--white);
+}
+
+.taskinboard div * {
+    pointer-events: none;
+    margin: 0;
+}
+
+.taskinboard div h2 {
+    text-align: center;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.taskinboard div p {
+    text-align: center;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--blue_2);
+}
+
+.namecontainer {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.namecontainer h2 {
+    margin: 0;
+}
+
+.greeting {
+    font-style: normal;
+    color: var(--blue_2);
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.greetingname {
+    font-style: normal;
+    color: var(--blue_4);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+@media (max-width: 1250px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .namecontainer {
+        display: none;
+    }
+
+    .summarycontainer {
+        margin: 0;
+        width: auto;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .contentcontainer {
+        margin: 0;
+    }
+
+    .summaryboard {
+        justify-content: center;
+        align-items: center;
+        width: 398px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        gap: 8px;
+        width: 398px;
+    }
+
+    .header h1 {
+        font-size: 47px;
+    }
+
+    .header img {
+        position: absolute;
+        rotate: 90deg;
+        height: 90px;
+        left: 40px;
+        bottom: -64px;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+
+    .tododonecontainer {
+        width: auto;
+    }
+
+    .tododone {
+        width: 148px;
+        height: 34px;
+        padding: 38px 19px;
+        gap: 10px;
+        border-radius: 20px;
+    }
+
+    .tododone .img {
+        width: 40px;
+        height: 40px;
+        border-radius: 90px;
+        background-size: 40px 40px;
+    }
+
+    .tododone .tododonecount h2 {
+        font-size: 47px;
+    }
+
+    .tododone .tododonecount p {
+        font-size: 14px;
+    }
+
+    .urgentcontainer {
+        width: 396px;
+        height: 54px;
+        padding: 28px 0px;
+        gap: 20px;
+        flex-shrink: 0;
+        border-radius: 20px;
+    }
+
+    .urgentimgcontainer {
+        width: 40px;
+        height: 40px;
+        background-size: 23px 17px;
+    }
+
+    .urgent div h2 {
+        font-size: 47px;
+    }
+
+    .urgent div p {
+        font-size: 14px;
+    }
+
+    .urgentcontainer img {
+        height: 68px;
+    }
+
+    .datecontainer h2 {
+        font-size: 16px;
+    }
+
+    .datecontainer p {
+        font-size: 14px;
+    }
+
+    .taskinboard div {
+        width: 116px;
+        height: 66px;
+        padding: 25px 0px;
+        gap: 13px;
+    }
+
+    .taskinboard div h2 {
+        font-size: 47px;
+    }
+
+    .taskinboard div p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .summarycontainer {
+        height: 110vh;
+    }
+    .header {
+        width: 300px;
+    }
+    .tododonecontainer {
+        gap: 15px;
+        width: 300px;
+    }
+    .tododone {
+        width: 104px;
+    }
+    .urgentcontainer {
+        width: 300px;
+        gap: 10px;
+    }
+    .urgentamount {
+        font-size: 37px !important;
+    }
+    .taskinboard {
+        width: 300px;
+        gap: 15px;
+    }
+    .taskinboard div {
+        width: 90px;
+    }
+}
+
+@media (max-height: 800px) {
+    .summarycontainer {
+        height: 110vh;
+    }
+}

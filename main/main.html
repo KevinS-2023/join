@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../colors/colors.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../joinlogo/logo_dark.svg" type="image/x-icon">
+    <title>Join</title>
+</head>
+
+<body>
+
+    <div class="joinsurface">
+
+        <div class="header">
+
+            <div class="smalllogo">
+                <img src="../joinlogo/logo_dark.svg" alt="">
+            </div>
+
+            <div class="headtext">
+                Kanban Project Management Tool
+            </div>
+
+            <div class="frame">
+                <a class="help navitem" name="help" >
+                    <img src="../assets/help.svg" alt="">
+                </a>
+
+                <div href="#" class="userprofile user_logo"></div>
+
+            </div>
+
+        </div>
+
+        <div class="popupcontainer d-none">
+
+            <nav class="popup">
+                <a class="popup_link navitem" name="legalnotice">Legal Notice</a>
+                <a class="popup_link navitem" name="privacypolicy">Privacy Policy</a>
+                <a class="popup_link" name="logout">Log out</a>
+            </nav>
+
+        </div>
+
+        <div class="joinsidebar">
+            <div class="joinlogo">
+                <img src="../joinlogo/logo_white.svg" alt="">
+            </div>
+
+            <nav class="sidebarnav">
+                <button class="sidebaritem selectedsidebaritem navitem" name="summary">
+                    <div class="sidebarcontent">
+                        <img src="../assets/summary.svg" alt="">
+                        Summary
+                    </div>
+                </button>
+                <button class="sidebaritem navitem" name="task">
+                    <div class="sidebarcontent">
+                        <img src="../assets/addtask.svg" alt="">
+                        Add Task
+                    </div>
+                </button>
+                <button class="sidebaritem navitem" name="board">
+                    <div class="sidebarcontent">
+                        <img src="../assets/board.svg" alt="">
+                        Board
+                    </div>
+                </button>
+                <button class="sidebaritem navitem" name="contacts">
+                    <div class="sidebarcontent">
+                        <img src="../assets/contacts.svg" alt="">
+                        Contacts
+                    </div>
+                </button>
+            </nav>
+
+            <nav class="extra">
+
+                <button class="extraitem navitem" name="privacypolicy">
+                    Privacy Policy
+                </button>
+
+                <button class="extraitem navitem" name="legalnotice">
+                    Legal notice
+                </button>
+
+            </nav>
+
+        </div>
+
+        <iframe src="../templates/layouts/summary.html" frameborder="0" class="joincontent"></iframe>
+
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

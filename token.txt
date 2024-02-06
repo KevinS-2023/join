@@ -1,0 +1,6 @@
+token: 8GKN7DASXMN9URAH8C1AKMG6H4H86G3N6JMVGLRB
+url: https://remote-storage.developerakademie.org/item
+key = "USERS"
+actualuserkey = "actualuser"
+taskskey = "TASKS"
+contactskey = "CONSTACTS"
